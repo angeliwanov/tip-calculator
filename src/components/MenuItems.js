@@ -1,11 +1,11 @@
 import { Stack } from '@twilio-paste/stack';
-import MenuItem from './MenuItem';
+import { MenuItemContaier } from '../containers/MenuItemContainer';
 
 export const MenuItems = ({ items }) => {
   return (
     <Stack orientation="vertical" spacing="space60">
       {items.map((item) => (
-        <MenuItem {...item} key={item.uuid} />
+        <MenuItemContaier {...item} key={item.uuid} />
       ))}
     </Stack>
   );
